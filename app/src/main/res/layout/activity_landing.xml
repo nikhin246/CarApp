@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.nikhin.carapp.LandingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <com.example.nikhin.carapp.AutoScrollViewPager
+                android:id="@+id/pager"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp" />
+
+            <com.example.nikhin.carapp.util.CircularPageIndicator
+                android:id="@+id/cpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/margin_10"
+                app:fillColor="@color/select_footer_button_color"
+                app:strokeColor="@color/select_footer_button_color"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_recaro"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:src="@drawable/recaro_logo"/>
+
+        <RelativeLayout
+            android:id="@+id/r1_select_make"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="@dimen/margin_25"
+            android:layout_marginTop="40dp">
+
+
+            <ImageView
+                android:id="@+id/make_right_arrow"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/grey_right_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/img_check_make"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/selected_check"
+                android:layout_toLeftOf="@+id/make_right_arrow"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/select_make"
+                android:layout_toLeftOf="@+id/img_check_make"
+                android:text="Select Make"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_divide"/>
+
+        <RelativeLayout
+            android:id="@+id/r1_select_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="@dimen/margin_25"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/model_right_arrow"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/grey_right_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/img_check_model"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/selected_check"
+                android:layout_toLeftOf="@+id/model_right_arrow"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Model"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_divide"/>
+
+        <RelativeLayout
+            android:id="@+id/r1_select_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="@dimen/margin_25"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/year_right_arrow"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/grey_right_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/img_check_year"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/selected_check"
+                android:layout_toLeftOf="@+id/year_right_arrow"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Year"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_alignTop="@+id/year_right_arrow"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_divide"/>
+
+
+    </LinearLayout>
+</ScrollView>
